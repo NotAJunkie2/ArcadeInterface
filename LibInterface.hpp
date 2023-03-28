@@ -11,17 +11,30 @@
     #include <memory>
 
 namespace Arcade {
-    enum class input {
-        ARCADE_LEFT = 1,
-        ARCADE_RIGHT,
-        ARCADE_UP,
-        ARCADE_DOWN,
-        ARCADE_NEXT_LIB,
-        ARCADE_NEXT_GAME,
-        ARCADE_RESTART,
-        ARCADE_MENU,
-        ARCADE_EXIT,
-        ARCADE_UNKNOWN = -1
+    enum class KeyInput {
+        ARCK_LEFT = 1,
+        ARCK_RIGHT,
+        ARCK_UP,
+        ARCK_DOWN,
+        ARCK_A,
+        ARCK_Z,
+        ARCK_E,
+        ARCK_R,
+        ARCK_T,
+        ARCK_Y,
+        ARCK_Q,
+        ARCK_S,
+        ARCK_D,
+        ARCK_F,
+        ARCK_G,
+        ARCK_H,
+        ARCK_W,
+        ARCK_X,
+        ARCK_C,
+        ARCK_V,
+        ARCK_B,
+        ARCK_N,
+        ARCK_UNKNOWN = -1
     };
 
     class IDisplayModule {
@@ -30,12 +43,11 @@ namespace Arcade {
 
             // Window methods
             virtual void createWindow(size_t width, size_t height, const std::string &name = "Arcade") = 0;
-            virtual void clearWindow() = 0;
             virtual void destroyWindow() = 0;
-            // virtual void drawWindow(void *obj) = 0;
+            virtual void drawWindow(void *obj) = 0;
 
             // Get input
-            virtual input getInput() const = 0;
+            virtual KeyInput getInput() const = 0;
     };
 }
 
