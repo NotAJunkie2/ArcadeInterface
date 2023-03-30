@@ -37,6 +37,11 @@ namespace Arcade {
         ARCK_UNKNOWN = -1
     };
 
+    using vector2I_t = struct vector_s {
+        int x;
+        int y;
+    };
+
     class IDisplayModule {
         public :
             virtual ~IDisplayModule() = default;
@@ -44,7 +49,7 @@ namespace Arcade {
             // Window methods
             virtual void createWindow(size_t width, size_t height, const std::string &name = "Arcade") = 0;
             virtual void destroyWindow() = 0;
-            virtual void drawWindow(void *obj) = 0;
+            virtual void drawWindow(vector2I_t atlasPos) = 0;
 
             // Get input
             virtual KeyInput getInput() const = 0;
