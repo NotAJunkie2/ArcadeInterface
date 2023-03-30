@@ -42,16 +42,17 @@ namespace Arcade {
         int y;
     };
 
-    class IDisplayModule {
-        public :
-            virtual ~IDisplayModule() = default;
+    class IGameModule {
+        public:
+            virtual ~IGameModule() = default;
 
-            // Window methods
-            virtual void createWindow(size_t width, size_t height, const std::string &name = "Arcade") = 0;
-            virtual void destroyWindow() = 0;
-            virtual void drawWindow(vector2I_t atlasPos) = 0;
+            virtual void init() = 0;
+            virtual void update(size_t dt) = 0;
+            virtual void destroy() = 0;
+            virtual void restart() = 0;
+            virtual void pause() = 0;
+            virtual void resume() = 0;
 
-            // Get input
             virtual KeyInput getInput() const = 0;
     };
 }
