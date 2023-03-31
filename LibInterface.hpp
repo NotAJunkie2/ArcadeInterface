@@ -11,6 +11,23 @@
     #include <memory>
 
 namespace Arcade {
+    using vector2I_t = struct vector2I_s {
+        float x;
+        float y;
+    };
+
+    using rect_t = struct rect_s {
+        int x;
+        int y;
+        int width;
+        int height;
+    };
+
+    using object_t = struct object_s {
+        rect_t atlasRect;
+        vector2I_t pos;
+    };
+
     enum class KeyInput {
         ARCK_LEFT = 1,
         ARCK_RIGHT,
@@ -37,11 +54,11 @@ namespace Arcade {
         ARCK_UNKNOWN = -1
     };
 
-    using vector2I_t = struct vector_s {
-        int x;
-        int y;
+    using assets_t = struct assets_s {
+        std::string path;
+        char **charAtlas;
     };
-    
+
     class IDisplayModule {
         public :
             virtual ~IDisplayModule() = default;
@@ -49,7 +66,11 @@ namespace Arcade {
             // Window methods
             virtual void createWindow(size_t width, size_t height, const std::string &name = "Arcade") = 0;
             virtual void destroyWindow() = 0;
-            virtual void drawWindow(vector2I_t atlasPos) = 0;
+            virtual void updateWindow() = 0;
+            virtual void drawWindow(std::vector<object_t> obj) = 0;
+
+            // Load
+            void loadAtlas(const std::string &path);
 
             // Get input
             virtual KeyInput getInput() const = 0;
@@ -60,13 +81,14 @@ namespace Arcade {
             virtual ~IGameModule() = default;
 
             virtual void init() = 0;
-            virtual void update(size_t dt) = 0;
+            virtual void update(float dt) = 0;
+            virtual void draw(IDisplayModule &display) = 0;
             virtual void destroy() = 0;
             virtual void restart() = 0;
             virtual void pause() = 0;
             virtual void resume() = 0;
 
-            virtual KeyInput getInput() const = 0;
+            virtual void inputEvent(Arcade::KeyInput input) = 0;
     };
 }
 
