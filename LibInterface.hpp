@@ -9,6 +9,7 @@
     #define LIBINTERFACE_HPP_
     #include <iostream>
     #include <memory>
+    #include <vector>
 
 namespace Arcade {
     using vector2I_t = struct vector2I_s {
@@ -56,7 +57,7 @@ namespace Arcade {
 
     using assets_t = struct assets_s {
         std::string path;
-        char **charAtlas;
+        std::string charAtlas;
     };
 
     class IDisplayModule {
@@ -70,7 +71,7 @@ namespace Arcade {
             virtual void drawWindow(std::vector<object_t> obj) = 0;
 
             // Load
-            void loadAtlas(const std::string &path);
+            virtual void loadAtlas(const Arcade::assets_t &assets) = 0;
 
             // Get input
             virtual KeyInput getInput() const = 0;
