@@ -52,7 +52,8 @@ namespace Arcade {
         ARCK_V,
         ARCK_B,
         ARCK_N,
-        ARCK_UNKNOWN = -1
+        ARCK_UNKNOWN = -1,
+        ARCK_ESC
     };
 
     using assets_t = struct assets_s {
@@ -69,10 +70,8 @@ namespace Arcade {
             virtual void destroyWindow() = 0;
             virtual void updateWindow() = 0;
             virtual void drawWindow(std::vector<object_t> obj) = 0;
-
             // Load
             virtual void loadAtlas(const Arcade::assets_t &assets) = 0;
-
             // Get input
             virtual KeyInput getInput() const = 0;
     };
