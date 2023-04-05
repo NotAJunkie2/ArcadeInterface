@@ -29,6 +29,11 @@ namespace Arcade {
         vector2I_t pos;
     };
 
+    using text_object_t = struct text_object_s {
+        std::string text;
+        vector2I_t pos;
+    };
+
     enum class KeyInput {
         ARCK_LEFT = 1,
         ARCK_RIGHT,
@@ -68,10 +73,14 @@ namespace Arcade {
             // Window methods
             virtual void createWindow(size_t width, size_t height, const std::string &name = "Arcade") = 0;
             virtual void destroyWindow() = 0;
-            virtual void updateWindow() = 0;
+            virtual void clearWindow() = 0;
             virtual void drawWindow(std::vector<object_t> obj) = 0;
+            virtual void updateWindow() = 0;
+            virtual void drawText(std::vector<text_object_t> text) = 0;
+
             // Load
             virtual void loadAtlas(const Arcade::assets_t &assets) = 0;
+
             // Get input
             virtual KeyInput getInput() const = 0;
     };
