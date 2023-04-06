@@ -57,6 +57,7 @@ namespace Arcade {
         ARCK_V,
         ARCK_B,
         ARCK_N,
+        ARCK_ENTER,
         ARCK_UNKNOWN = -1,
         ARCK_ESC
     };
