@@ -77,6 +77,7 @@ namespace Arcade {
             virtual void drawWindow(std::vector<object_t> obj) = 0;
             virtual void updateWindow() = 0;
             virtual void drawText(std::vector<text_object_t> text) = 0;
+            virtual void setGridSize(size_t size) = 0;
 
             // Load
             virtual void loadAtlas(const Arcade::assets_t &assets) = 0;
