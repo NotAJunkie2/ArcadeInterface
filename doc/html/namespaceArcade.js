@@ -1,0 +1,36 @@
+var namespaceArcade =
+[
+    [ "IDisplayModule", "classArcade_1_1IDisplayModule.html", "classArcade_1_1IDisplayModule" ],
+    [ "IGameModule", "classArcade_1_1IGameModule.html", "classArcade_1_1IGameModule" ],
+    [ "assets_t", "namespaceArcade.html#ae59489665897b2433826d5a728dd05ce", null ],
+    [ "object_t", "namespaceArcade.html#a6d04756033431f622432fdab0ab5e5b1", null ],
+    [ "rect_t", "namespaceArcade.html#aa72a7bea9fa474c5e102f7e43d322851", null ],
+    [ "text_object_t", "namespaceArcade.html#a77311ef44564c83a961cc2f53f06076c", null ],
+    [ "vector2I_t", "namespaceArcade.html#abe59b48862e798fa9b1174d93c0c1caa", null ],
+    [ "KeyInput", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390d", [
+      [ "ARCK_LEFT", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da191051e930c0418598ea7a241921f528", null ],
+      [ "ARCK_RIGHT", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da0e23ad3b272da7642534b0c25a44fdae", null ],
+      [ "ARCK_UP", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390daa612d65482fb204b6653127c706cbb59", null ],
+      [ "ARCK_DOWN", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390dabf24502b56bc718decd8d94f97a84c85", null ],
+      [ "ARCK_A", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da574e0cdb03bbdc2c6020448c110fdd6e", null ],
+      [ "ARCK_Z", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da05f7f32df2bb1e95e240d4bda4552cf4", null ],
+      [ "ARCK_E", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da5546c41b409383754262cf0c0f197a0f", null ],
+      [ "ARCK_R", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da3b18a55a88af76fbe9e107064f2ab41a", null ],
+      [ "ARCK_T", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da625f8b1a948bbefdd43c1c28fee09e88", null ],
+      [ "ARCK_Y", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da55f2c1c8ce42ce53775993d58a51988c", null ],
+      [ "ARCK_Q", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da213c8037ec3caf928123e69e80e8949d", null ],
+      [ "ARCK_S", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390dad0dfe89280d6818af7589427ea2b3845", null ],
+      [ "ARCK_D", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da54a72d55a3fdb5fb4c822ba0b8ec70ff", null ],
+      [ "ARCK_F", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da165e87ea80656fc255cb747662c06876", null ],
+      [ "ARCK_G", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390dafe72aa59dc7b4aa45b09e097102278dd", null ],
+      [ "ARCK_H", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da93028ff2f05d66622f46e04596e1970c", null ],
+      [ "ARCK_W", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da2ac516f7c4e32ac8328ce4cc63953c99", null ],
+      [ "ARCK_X", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da8fc206ffa9efc6ee805538957d822b47", null ],
+      [ "ARCK_C", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da3d14b27662dfef701faa4fa8697735ee", null ],
+      [ "ARCK_V", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390dabfe5bbbd69941c08b4911b4eede0b860", null ],
+      [ "ARCK_B", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da1e6274d7a2d60954ebaf3f217f7c362f", null ],
+      [ "ARCK_N", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390dacc12ad151ccf81f4e6e8e05c0f45124a", null ],
+      [ "ARCK_UNKNOWN", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da312fc1c388ff33f540f710252d322675", null ],
+      [ "ARCK_ESC", "namespaceArcade.html#a0dcb82aa215e2e30f910bbd8a751390da5b190b5599dd9fd19983fbbd9682de8b", null ]
+    ] ]
+];

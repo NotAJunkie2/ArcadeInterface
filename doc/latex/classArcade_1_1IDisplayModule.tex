@@ -1,0 +1,112 @@
+\hypertarget{classArcade_1_1IDisplayModule}{}\doxysection{Arcade\+::IDisplay\+Module Class Reference}
+\label{classArcade_1_1IDisplayModule}\index{Arcade::IDisplayModule@{Arcade::IDisplayModule}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_a599a752bb6a5f3117d9e4392562e4e21}\label{classArcade_1_1IDisplayModule_a599a752bb6a5f3117d9e4392562e4e21}} 
+virtual {\bfseries $\sim$\+IDisplay\+Module} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classArcade_1_1IDisplayModule}{IDisplay\+Module}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArcade_1_1IDisplayModule_af64283a2cee845222f8543570fce9427}{create\+Window}} (size\+\_\+t width, size\+\_\+t height, const std\+::string \&name=\char`\"{}Arcade\char`\"{})=0
+\begin{DoxyCompactList}\small\item\em Create a Window object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_afb9f4274b3d5c339af65d7ea4363393c}\label{classArcade_1_1IDisplayModule_afb9f4274b3d5c339af65d7ea4363393c}} 
+virtual void {\bfseries destroy\+Window} ()=0
+\begin{DoxyCompactList}\small\item\em destroy window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_a3b760ce7b12309e68874b231c233820b}\label{classArcade_1_1IDisplayModule_a3b760ce7b12309e68874b231c233820b}} 
+virtual void {\bfseries clear\+Window} ()=0
+\begin{DoxyCompactList}\small\item\em clear the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArcade_1_1IDisplayModule_a5b3bf07e9fb763b8d71ceb59616e5c2f}{draw\+Window}} (std\+::vector$<$ \mbox{\hyperlink{namespaceArcade_a6d04756033431f622432fdab0ab5e5b1}{object\+\_\+t}} $>$ obj)=0
+\begin{DoxyCompactList}\small\item\em draw Object on window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_a76f73a8552d17f54417b1c3ff4ef248c}\label{classArcade_1_1IDisplayModule_a76f73a8552d17f54417b1c3ff4ef248c}} 
+virtual void {\bfseries update\+Window} ()=0
+\begin{DoxyCompactList}\small\item\em Update window before display. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArcade_1_1IDisplayModule_a1371852f34bd6d033d84d1eaaa06ef65}{draw\+Text}} (std\+::vector$<$ \mbox{\hyperlink{namespaceArcade_a77311ef44564c83a961cc2f53f06076c}{text\+\_\+object\+\_\+t}} $>$ text)=0
+\begin{DoxyCompactList}\small\item\em Draw text. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArcade_1_1IDisplayModule_a6c92b4987bd1290cce4f033f05538f60}{load\+Atlas}} (const \mbox{\hyperlink{namespaceArcade_ae59489665897b2433826d5a728dd05ce}{Arcade\+::assets\+\_\+t}} \&assets)=0
+\begin{DoxyCompactList}\small\item\em Load assets in the atlas. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespaceArcade_a0dcb82aa215e2e30f910bbd8a751390d}{Key\+Input}} \mbox{\hyperlink{classArcade_1_1IDisplayModule_a520db00209b72b594317e6c67ee54710}{get\+Input}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Input object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_af64283a2cee845222f8543570fce9427}\label{classArcade_1_1IDisplayModule_af64283a2cee845222f8543570fce9427}} 
+\index{Arcade::IDisplayModule@{Arcade::IDisplayModule}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!Arcade::IDisplayModule@{Arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+IDisplay\+Module\+::create\+Window (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{width,  }\item[{size\+\_\+t}]{height,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}Arcade\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a Window object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & width of window \\
+\hline
+{\em height} & height of window \\
+\hline
+{\em name} & name of window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_a1371852f34bd6d033d84d1eaaa06ef65}\label{classArcade_1_1IDisplayModule_a1371852f34bd6d033d84d1eaaa06ef65}} 
+\index{Arcade::IDisplayModule@{Arcade::IDisplayModule}!drawText@{drawText}}
+\index{drawText@{drawText}!Arcade::IDisplayModule@{Arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+IDisplay\+Module\+::draw\+Text (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceArcade_a77311ef44564c83a961cc2f53f06076c}{text\+\_\+object\+\_\+t}} $>$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_a5b3bf07e9fb763b8d71ceb59616e5c2f}\label{classArcade_1_1IDisplayModule_a5b3bf07e9fb763b8d71ceb59616e5c2f}} 
+\index{Arcade::IDisplayModule@{Arcade::IDisplayModule}!drawWindow@{drawWindow}}
+\index{drawWindow@{drawWindow}!Arcade::IDisplayModule@{Arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{drawWindow()}{drawWindow()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+IDisplay\+Module\+::draw\+Window (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceArcade_a6d04756033431f622432fdab0ab5e5b1}{object\+\_\+t}} $>$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+draw Object on window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_a520db00209b72b594317e6c67ee54710}\label{classArcade_1_1IDisplayModule_a520db00209b72b594317e6c67ee54710}} 
+\index{Arcade::IDisplayModule@{Arcade::IDisplayModule}!getInput@{getInput}}
+\index{getInput@{getInput}!Arcade::IDisplayModule@{Arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceArcade_a0dcb82aa215e2e30f910bbd8a751390d}{Key\+Input}} Arcade\+::\+IDisplay\+Module\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Input object. 
+
+\begin{DoxyReturn}{Returns}
+Key\+Input 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArcade_1_1IDisplayModule_a6c92b4987bd1290cce4f033f05538f60}\label{classArcade_1_1IDisplayModule_a6c92b4987bd1290cce4f033f05538f60}} 
+\index{Arcade::IDisplayModule@{Arcade::IDisplayModule}!loadAtlas@{loadAtlas}}
+\index{loadAtlas@{loadAtlas}!Arcade::IDisplayModule@{Arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{loadAtlas()}{loadAtlas()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+IDisplay\+Module\+::load\+Atlas (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceArcade_ae59489665897b2433826d5a728dd05ce}{Arcade\+::assets\+\_\+t}} \&}]{assets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Load assets in the atlas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em assets} & assets sheet \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/IDisplay\+Module.\+hpp\end{DoxyCompactItemize}

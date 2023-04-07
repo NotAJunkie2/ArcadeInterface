@@ -1,0 +1,28 @@
+\hypertarget{IGameModule_8hpp}{}\doxysection{includes/\+IGame\+Module.hpp File Reference}
+\label{IGameModule_8hpp}\index{includes/IGameModule.hpp@{includes/IGameModule.hpp}}
+
+
+Destroy the IGame\+Module object.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}IDisplay\+Module.\+hpp\char`\"{}}\newline
+Include dependency graph for IGame\+Module.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classArcade_1_1IGameModule}{Arcade\+::\+IGame\+Module}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceArcade}{Arcade}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceArcade}{Arcade}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Destroy the IGame\+Module object. 
+

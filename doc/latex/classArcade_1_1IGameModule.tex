@@ -1,0 +1,79 @@
+\hypertarget{classArcade_1_1IGameModule}{}\doxysection{Arcade\+::IGame\+Module Class Reference}
+\label{classArcade_1_1IGameModule}\index{Arcade::IGameModule@{Arcade::IGameModule}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArcade_1_1IGameModule_a2006ff873995e082451d37cdbe8f9045}\label{classArcade_1_1IGameModule_a2006ff873995e082451d37cdbe8f9045}} 
+virtual void {\bfseries init} ()=0
+\begin{DoxyCompactList}\small\item\em Give default value for all variable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArcade_1_1IGameModule_a2f5217be2052339a7aae11c9dc5b5d99}{update}} (float dt)=0
+\begin{DoxyCompactList}\small\item\em Update game depending on delta time. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArcade_1_1IGameModule_aa009d0ff0f64c8c8088acfe27d924a25}{draw}} (\mbox{\hyperlink{classArcade_1_1IDisplayModule}{IDisplay\+Module}} \&display)=0
+\begin{DoxyCompactList}\small\item\em Draw all object on display screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArcade_1_1IGameModule_a27dc7310efc8de4f230a87a63cb35bb5}\label{classArcade_1_1IGameModule_a27dc7310efc8de4f230a87a63cb35bb5}} 
+virtual void {\bfseries destroy} ()=0
+\begin{DoxyCompactList}\small\item\em Destroy all object left in the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArcade_1_1IGameModule_ae36f03337f8532a267319ef75057e741}\label{classArcade_1_1IGameModule_ae36f03337f8532a267319ef75057e741}} 
+virtual void {\bfseries restart} ()=0
+\begin{DoxyCompactList}\small\item\em Restart the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArcade_1_1IGameModule_aa0ab99cfad0bc58bdb38cb3dc1d9a0d4}\label{classArcade_1_1IGameModule_aa0ab99cfad0bc58bdb38cb3dc1d9a0d4}} 
+virtual void {\bfseries pause} ()=0
+\begin{DoxyCompactList}\small\item\em Pauses the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArcade_1_1IGameModule_ac53d0f541165c3c2af5bfbf9a0022ae5}\label{classArcade_1_1IGameModule_ac53d0f541165c3c2af5bfbf9a0022ae5}} 
+virtual void {\bfseries resume} ()=0
+\begin{DoxyCompactList}\small\item\em Unpause the game. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classArcade_1_1IGameModule_ae644010a7fdee224841197ec47bb7e76}{input\+Event}} (\mbox{\hyperlink{namespaceArcade_a0dcb82aa215e2e30f910bbd8a751390d}{Arcade\+::\+Key\+Input}} input)=0
+\begin{DoxyCompactList}\small\item\em Detect key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArcade_1_1IGameModule_aa009d0ff0f64c8c8088acfe27d924a25}\label{classArcade_1_1IGameModule_aa009d0ff0f64c8c8088acfe27d924a25}} 
+\index{Arcade::IGameModule@{Arcade::IGameModule}!draw@{draw}}
+\index{draw@{draw}!Arcade::IGameModule@{Arcade::IGameModule}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+IGame\+Module\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArcade_1_1IDisplayModule}{IDisplay\+Module}} \&}]{display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw all object on display screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em display} & screen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArcade_1_1IGameModule_ae644010a7fdee224841197ec47bb7e76}\label{classArcade_1_1IGameModule_ae644010a7fdee224841197ec47bb7e76}} 
+\index{Arcade::IGameModule@{Arcade::IGameModule}!inputEvent@{inputEvent}}
+\index{inputEvent@{inputEvent}!Arcade::IGameModule@{Arcade::IGameModule}}
+\doxysubsubsection{\texorpdfstring{inputEvent()}{inputEvent()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+IGame\+Module\+::input\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceArcade_a0dcb82aa215e2e30f910bbd8a751390d}{Arcade\+::\+Key\+Input}}}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Detect key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArcade_1_1IGameModule_a2f5217be2052339a7aae11c9dc5b5d99}\label{classArcade_1_1IGameModule_a2f5217be2052339a7aae11c9dc5b5d99}} 
+\index{Arcade::IGameModule@{Arcade::IGameModule}!update@{update}}
+\index{update@{update}!Arcade::IGameModule@{Arcade::IGameModule}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Arcade\+::\+IGame\+Module\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update game depending on delta time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/\mbox{\hyperlink{IGameModule_8hpp}{IGame\+Module.\+hpp}}\end{DoxyCompactItemize}

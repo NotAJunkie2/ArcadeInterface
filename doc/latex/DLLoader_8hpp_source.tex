@@ -1,0 +1,56 @@
+\hypertarget{DLLoader_8hpp_source}{}\doxysection{DLLoader.\+hpp}
+\label{DLLoader_8hpp_source}\index{includes/DLLoader.hpp@{includes/DLLoader.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** arcade}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** DLLoader}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef DLLOADER\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{    \#define DLLOADER\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{    \#include <iostream>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{    \#include <dlfcn.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{    \#include <vector>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{// TODO: add error handling class}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{classDLLoader}{DLLoader}} \{}
+\DoxyCodeLine{18     \textcolor{keyword}{const} std::string \_path;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} *\_handle;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         \mbox{\hyperlink{classDLLoader}{DLLoader}}(std::string path) :}
+\DoxyCodeLine{23             \_path(path)}
+\DoxyCodeLine{24         \{}
+\DoxyCodeLine{25             \_handle = dlopen(\_path.c\_str(), RTLD\_LAZY);}
+\DoxyCodeLine{26             \textcolor{keywordflow}{if} (!\_handle)}
+\DoxyCodeLine{27                 std::cerr << \textcolor{stringliteral}{"{}Error: "{}} << dlerror() << std::endl;}
+\DoxyCodeLine{28             std::cout << \textcolor{stringliteral}{"{}DLLoader: "{}} << \_path << \textcolor{stringliteral}{"{} loaded"{}} << std::endl; \textcolor{comment}{// TODO: remove}}
+\DoxyCodeLine{29         \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{32         T *getInstance(\textcolor{keyword}{const} std::string \&entryPoint)}
+\DoxyCodeLine{33         \{}
+\DoxyCodeLine{34             T *(*entryPointFunc)() = \textcolor{keyword}{reinterpret\_cast<}T *(*)()\textcolor{keyword}{>}(dlsym(\_handle, entryPoint.c\_str()));}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36             \textcolor{keywordflow}{if} (!entryPointFunc) \{}
+\DoxyCodeLine{37                 std::cerr << \textcolor{stringliteral}{"{}Error: "{}} << dlerror() << std::endl;}
+\DoxyCodeLine{38                 \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{39             \}}
+\DoxyCodeLine{40             \textcolor{keywordflow}{return} entryPointFunc();}
+\DoxyCodeLine{41         \}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43         \mbox{\hyperlink{classDLLoader}{\string~DLLoader}}()}
+\DoxyCodeLine{44         \{}
+\DoxyCodeLine{45             std::cout << \textcolor{stringliteral}{"{}DLLoader: "{}} << \textcolor{stringliteral}{"{}unloaded"{}} << std::endl; \textcolor{comment}{// TODO: remove}}
+\DoxyCodeLine{46             dlclose(\_handle);}
+\DoxyCodeLine{47         \}}
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !DLLOADER\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

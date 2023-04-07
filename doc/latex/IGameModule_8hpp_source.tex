@@ -1,0 +1,37 @@
+\hypertarget{IGameModule_8hpp_source}{}\doxysection{IGame\+Module.\+hpp}
+\label{IGameModule_8hpp_source}\index{includes/IGameModule.hpp@{includes/IGameModule.hpp}}
+\mbox{\hyperlink{IGameModule_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** LibInterface.hpp}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** LibInterface}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef IGameModule\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{    \#define IGameModule\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}IDisplayModule.hpp"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceArcade}{Arcade}} \{}
+\DoxyCodeLine{15     \textcolor{keyword}{class }\mbox{\hyperlink{classArcade_1_1IGameModule}{IGameModule}} \{}
+\DoxyCodeLine{16         \textcolor{keyword}{public}:}
+\DoxyCodeLine{21             \textcolor{keyword}{virtual} \mbox{\hyperlink{classArcade_1_1IGameModule}{\string~IGameModule}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_a2006ff873995e082451d37cdbe8f9045}{init}}() = 0;}
+\DoxyCodeLine{32             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_a2f5217be2052339a7aae11c9dc5b5d99}{update}}(\textcolor{keywordtype}{float} dt) = 0;}
+\DoxyCodeLine{38             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_aa009d0ff0f64c8c8088acfe27d924a25}{draw}}(\mbox{\hyperlink{classArcade_1_1IDisplayModule}{IDisplayModule}} \&display) = 0;}
+\DoxyCodeLine{42             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_a27dc7310efc8de4f230a87a63cb35bb5}{destroy}}() = 0;}
+\DoxyCodeLine{46             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_ae36f03337f8532a267319ef75057e741}{restart}}() = 0;}
+\DoxyCodeLine{50             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_aa0ab99cfad0bc58bdb38cb3dc1d9a0d4}{pause}}() = 0;}
+\DoxyCodeLine{54             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_ac53d0f541165c3c2af5bfbf9a0022ae5}{resume}}() = 0;}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{61             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classArcade_1_1IGameModule_ae644010a7fdee224841197ec47bb7e76}{inputEvent}}(\mbox{\hyperlink{namespaceArcade_a0dcb82aa215e2e30f910bbd8a751390d}{Arcade::KeyInput}} input) = 0;}
+\DoxyCodeLine{62     \};}
+\DoxyCodeLine{63 \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* IGameModule\_HPP\_*/}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

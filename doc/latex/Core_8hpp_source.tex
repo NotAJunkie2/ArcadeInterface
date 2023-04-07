@@ -1,0 +1,45 @@
+\hypertarget{Core_8hpp_source}{}\doxysection{Core.\+hpp}
+\label{Core_8hpp_source}\index{includes/Core.hpp@{includes/Core.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** arcade}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Core}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef CORE\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{    \#define CORE\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{    \#include <memory>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{    \#include "{}\mbox{\hyperlink{IGameModule_8hpp}{IGameModule.hpp}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{    \#include "{}IDisplayModule.hpp"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{    \#include "{}DLLoader.hpp"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classCore}{Core}} \{}
+\DoxyCodeLine{17     std::unique\_ptr<Arcade::IDisplayModule *> \_lib;}
+\DoxyCodeLine{18     std::unique\_ptr<Arcade::IGameModule *> \_game;}
+\DoxyCodeLine{19     std::unique\_ptr<DLLoader> \_libloader;}
+\DoxyCodeLine{20     std::vector<std::string> \_libs;}
+\DoxyCodeLine{21     std::unique\_ptr<DLLoader> \_gameloader;}
+\DoxyCodeLine{22     std::vector<std::string> \_games;}
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} \_libIndex;}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} \_gameIndex;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{bool} \_menu;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keyword}{public}:}
+\DoxyCodeLine{28         \mbox{\hyperlink{classCore}{Core}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} init();}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} gameloop();}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} loadLib();}
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} loadGame();}
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} displayMenu();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         \mbox{\hyperlink{classCore}{\string~Core}}();}
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !CORE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
